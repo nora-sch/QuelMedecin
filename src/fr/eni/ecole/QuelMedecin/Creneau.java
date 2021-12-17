@@ -4,11 +4,11 @@ import java.time.LocalTime;
 
 public class Creneau {
 	// attributs d'instance
-	private MedecinGeneraliste medecin;
+	private Medecin medecin;
 	private LocalTime debut;
 	private  int duree;
 	// attributs de la classe
-	public Creneau(LocalTime debut, int duree, MedecinGeneraliste medecin) {
+	public Creneau(LocalTime debut, int duree, Medecin medecin) {
 		this.medecin = medecin;
 		this.debut = debut;
 		this.duree = duree;
@@ -19,13 +19,13 @@ public class Creneau {
 	/**
 	 * @return the medecin
 	 */
-	public MedecinGeneraliste getMedecin() {
+	public Medecin getMedecin() {
 		return medecin;
 	}
 	/**
-	 * @param medecin the medecin to set
+	 * @param medecin2 the medecin to set
 	 */
-	public void setMedecin(MedecinGeneraliste medecin) {
+	public void setMedecin(Medecin medecin) {
 		this.medecin = medecin;
 	}
 	/**

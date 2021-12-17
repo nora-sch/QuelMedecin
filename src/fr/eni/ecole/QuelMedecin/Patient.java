@@ -4,22 +4,22 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
-public class Patient {
+public class Patient extends Personne {
 	// attributs d'instance
-	private String nom;
-	private String prenom;
-	private String telephone;
+//	private String nom;
+//	private String prenom;
+//	private String telephone;
 	private char sexe;
 	private long numSoc;
 	private LocalDate dateNaissance;
 	private String comments;
-	private Adresse adresse;
+//	private Adresse adresse;
 	// attributs de la classe
 	// constructeur public de la base
 	//public Patient() {}
 	// constructeur public parametré 
 	public Patient(String nom, String prenom, String telephone, char sexe, long numSoc, LocalDate dateNaissance, String comments, Adresse adresse) {
-		super();
+		super(nom, prenom, telephone, adresse);
 		this.nom = nom.toUpperCase();
 		this.prenom = prenom;
 		this.telephone = telephone;
@@ -149,8 +149,10 @@ public class Patient {
 	// méthodes
 
 	public void afficher() {
-		System.out.println(this.nom.toUpperCase() + " " +this.prenom);	
-		System.out.println("Téléphone : "+this.telephone);
+		
+		super.afficher();
+//		System.out.println(this.nom.toUpperCase() + " " +this.prenom);	
+//		System.out.println("Téléphone : "+this.telephone);
 		if(this.sexe == 'F') {
 			System.out.println("Sexe : Féminin");
 		}else {
