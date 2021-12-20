@@ -13,8 +13,6 @@ public class Creneau {
 		this.debut = debut;
 		this.duree = duree;
 		medecin.ajouterCreneau(this);
-
-
 	}
 	/**
 	 * @return the medecin
@@ -23,7 +21,7 @@ public class Creneau {
 		return medecin;
 	}
 	/**
-	 * @param medecin2 the medecin to set
+	 * @param medecin the medecin to set
 	 */
 	public void setMedecin(Medecin medecin) {
 		this.medecin = medecin;
